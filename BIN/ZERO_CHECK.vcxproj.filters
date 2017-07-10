@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\d6ad0b58a8dd81818dd39cd78b3beaa3\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{67E2C901-139D-3F38-94B1-BEEC54E46844}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

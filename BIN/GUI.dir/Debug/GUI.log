@@ -1,0 +1,3 @@
+﻿  Cursos.cpp
+..\GUI\Cursos.cpp(150): warning C4172: devolución de dirección de la variable local o temporal
+  GUI.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\Debug\GUI.exe

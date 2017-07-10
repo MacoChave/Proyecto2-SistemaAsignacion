@@ -1,0 +1,633 @@
+The system is: Windows - 10.0.10240 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine, versi�n 12.0.31101.0
+[Microsoft .NET Framework, versi�n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 8/07/2017 3:47:36 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\3.9.0-rc5\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdC.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\3.9.0-rc5\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Compilaci�n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\3.9.0-rc5\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:14.85
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/3.9.0-rc5/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine, versi�n 12.0.31101.0
+[Microsoft .NET Framework, versi�n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 8/07/2017 3:47:51 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\3.9.0-rc5\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\3.9.0-rc5\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Compilaci�n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\3.9.0-rc5\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.65
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/3.9.0-rc5/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_862ef.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:52 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_862ef.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_862ef.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_862ef.dir\Debug\cmTC_862ef.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_862ef.dir\Debug\cmTC_862ef.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_862ef.dir\Debug\\" /Fd"cmTC_862ef.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_862ef.dir\Debug\\" /Fd"cmTC_862ef.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_862ef.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_862ef.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_862ef.lib" /MACHINE:X64  /machine:x64 cmTC_862ef.dir\Debug\testCCompiler.obj
+  cmTC_862ef.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_862ef.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_862ef.dir\Debug\cmTC_862ef.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_862ef.dir\Debug\cmTC_862ef.tlog\cmTC_862ef.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_862ef.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.15
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_11869.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:54 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_11869.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_11869.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_11869.dir\Debug\cmTC_11869.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_11869.dir\Debug\cmTC_11869.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_11869.dir\Debug\\" /Fd"cmTC_11869.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_11869.dir\Debug\\" /Fd"cmTC_11869.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_11869.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_11869.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_11869.lib" /MACHINE:X64  /machine:x64 cmTC_11869.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_11869.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_11869.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_11869.dir\Debug\cmTC_11869.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_11869.dir\Debug\cmTC_11869.tlog\cmTC_11869.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_11869.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.72
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_47777.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:55 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_47777.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_47777.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_47777.dir\Debug\cmTC_47777.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_47777.dir\Debug\cmTC_47777.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_47777.dir\Debug\\" /Fd"cmTC_47777.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_47777.dir\Debug\\" /Fd"cmTC_47777.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_47777.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_47777.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_47777.lib" /MACHINE:X64  /machine:x64 cmTC_47777.dir\Debug\testCXXCompiler.obj
+  cmTC_47777.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_47777.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_47777.dir\Debug\cmTC_47777.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_47777.dir\Debug\cmTC_47777.tlog\cmTC_47777.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_47777.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.65
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_91959.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:56 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_91959.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_91959.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_91959.dir\Debug\cmTC_91959.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_91959.dir\Debug\cmTC_91959.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_91959.dir\Debug\\" /Fd"cmTC_91959.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_91959.dir\Debug\\" /Fd"cmTC_91959.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_91959.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_91959.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_91959.lib" /MACHINE:X64  /machine:x64 cmTC_91959.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_91959.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_91959.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_91959.dir\Debug\cmTC_91959.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_91959.dir\Debug\cmTC_91959.tlog\cmTC_91959.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_91959.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.65
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_023a0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:57 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_023a0.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_023a0.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_023a0.dir\Debug\cmTC_023a0.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_023a0.dir\Debug\cmTC_023a0.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_023a0.dir\Debug\\" /Fd"cmTC_023a0.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_023a0.dir\Debug\\" /Fd"cmTC_023a0.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_023a0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_023a0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_023a0.lib" /MACHINE:X64  /machine:x64 cmTC_023a0.dir\Debug\feature_tests.obj
+  cmTC_023a0.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_023a0.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_023a0.dir\Debug\cmTC_023a0.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_023a0.dir\Debug\cmTC_023a0.tlog\cmTC_023a0.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_023a0.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.81
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_d69a4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:58 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_d69a4.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_d69a4.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_d69a4.dir\Debug\cmTC_d69a4.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_d69a4.dir\Debug\cmTC_d69a4.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_d69a4.dir\Debug\\" /Fd"cmTC_d69a4.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_d69a4.dir\Debug\\" /Fd"cmTC_d69a4.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_d69a4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_d69a4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_d69a4.lib" /MACHINE:X64  /machine:x64 cmTC_d69a4.dir\Debug\feature_tests.obj
+  cmTC_d69a4.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_d69a4.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_d69a4.dir\Debug\cmTC_d69a4.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_d69a4.dir\Debug\cmTC_d69a4.tlog\cmTC_d69a4.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_d69a4.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.64
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_eb385.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:47:59 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_eb385.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_eb385.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_eb385.dir\Debug\cmTC_eb385.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_eb385.dir\Debug\cmTC_eb385.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_eb385.dir\Debug\\" /Fd"cmTC_eb385.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_eb385.dir\Debug\\" /Fd"cmTC_eb385.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_eb385.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_eb385.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_eb385.lib" /MACHINE:X64  /machine:x64 cmTC_eb385.dir\Debug\feature_tests.obj
+  cmTC_eb385.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_eb385.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_eb385.dir\Debug\cmTC_eb385.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_eb385.dir\Debug\cmTC_eb385.tlog\cmTC_eb385.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_eb385.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.63
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_b3796.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, versi¢n 12.0.31101.0
+[Microsoft .NET Framework, versi¢n 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 8/07/2017 3:48:00 p. m..
+Proyecto "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_b3796.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_b3796.dir\Debug\".
+  Creando directorio "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_b3796.dir\Debug\cmTC_b3796.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_b3796.dir\Debug\cmTC_b3796.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_b3796.dir\Debug\\" /Fd"cmTC_b3796.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 18.00.40629 para x64
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_b3796.dir\Debug\\" /Fd"cmTC_b3796.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_b3796.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_b3796.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/CMakeTmp/Debug/cmTC_b3796.lib" /MACHINE:X64  /machine:x64 cmTC_b3796.dir\Debug\feature_tests.obj
+  cmTC_b3796.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\Debug\cmTC_b3796.exe
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_b3796.dir\Debug\cmTC_b3796.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_b3796.dir\Debug\cmTC_b3796.tlog\cmTC_b3796.lastbuildstate".
+Compilaci¢n del proyecto terminada "D:\Totto\Visual Studio 2013\Proyecto2\BIN\CMakeFiles\CMakeTmp\cmTC_b3796.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.62
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

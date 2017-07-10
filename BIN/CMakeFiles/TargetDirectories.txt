@@ -1,0 +1,3 @@
+D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/GUI.dir
+D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/ALL_BUILD.dir
+D:/Totto/Visual Studio 2013/Proyecto2/BIN/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Wt User Interface File v.1.0.0 -->
+<!-- Default Empty Project Configuration -->
+<WtCreator Rev="1.0" Wt_theme="Boostrap 3" Wt_title="Untitled Wt Webapp">
+ <WStyleSheet Path="resources/main.css"/>
+ <WRoot Wt_id="wt_root" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="">
+  <WObject Wt_id="grpLogin" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Inicio de Sesi%C3%B3n">
+   <WObject Wt_id="containerLogin" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+    <WObject Wt_id="edtUserLogin" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Usuario"/>
+    <WObject Wt_id="edtPassLogin" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Contrase%C3%B1a"/>
+    <WObject Wt_id="btnLogin" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Login" Wt_emptyText=""/>
+    <WObject Wt_id="txtWarninLogin" Wt_className="WText" Wt_isInline="0" Wt_textFormat="0" Wt_styleClass="item label-danger label" Wt_text="%C2%A1Usuario o Contrase%C3%B1a incorrecta%21"/>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpEstudiante" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Estudiante"/>
+  <WObject Wt_id="grpUsuarios" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de usuarios">
+   <WObject Wt_id="grpAddUsuario" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Agregar usuario">
+    <WObject Wt_id="containerAddUsuarios" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtAddUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre de usuario"/>
+     <WObject Wt_id="edtAddPassUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Contrase%C3%B1a de usuario"/>
+     <WObject Wt_id="edtAddTipoUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Tipo de usuario"/>
+     <WObject Wt_id="btnAddUsuario" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Agregar Usuario" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpEditUsuario" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Editar Usuario">
+    <WObject Wt_id="containerEditUsuarios" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtEditUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre de usuario"/>
+     <WObject Wt_id="edtEditPassUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Contrase%C3%B1a de usuario"/>
+     <WObject Wt_id="edtEditTipoUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Tipo de usuario"/>
+     <WObject Wt_id="btnEditUsuario" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Editar Usuario" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpDeleteUsuario" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Eliminar Usuario">
+    <WObject Wt_id="containerDeleteUsuarios" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtDeleteUsuario" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre de usuario"/>
+     <WObject Wt_id="btnDeleteUsuario" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Eliminar Usuario" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpEdificios" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de edificios y salones">
+   <WObject Wt_id="grpAddEdificio" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Agregar Edificio">
+    <WObject Wt_id="containerAddEdificio" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtAddNombreEdificio" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del Edificio"/>
+     <WObject Wt_id="btnAddEdificio" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Agregar Edificio" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpEditEdificio" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Editar Edificio">
+    <WObject Wt_id="containerEditEdificio" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtEditNombreEdificio" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del Edificio"/>
+     <WObject Wt_id="btnEditEdificio" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Editar Edificio" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpDeleteEdificio" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Eliminar Edificio">
+    <WObject Wt_id="containerDeleteEdificio" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtDeleteCodigoEdificio" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Codigot del Edificio"/>
+     <WObject Wt_id="btnDeleteEdificio" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Eliminar Edificio" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpAddSalon" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Agregar Salon">
+    <WObject Wt_id="containerAddSalon" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtAddEdificioSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Edificio"/>
+     <WObject Wt_id="edtAddNumeroSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Numero del Salon"/>
+     <WObject Wt_id="edtAddCapacidadSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Capacidad del Salon"/>
+     <WObject Wt_id="btnAddSalon" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Agregar Salon" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpEditSalon" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Editar Salon">
+    <WObject Wt_id="containerEditSalon" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtEditEdificioSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Edificio del Salon"/>
+     <WObject Wt_id="edtEditNumeroSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Numero del Salon"/>
+     <WObject Wt_id="edtEditCapacidadSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Capacidad del Salon"/>
+     <WObject Wt_id="btnEditSalon" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Editar Salon" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpDeleteSalon" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Eliminar Salon">
+    <WObject Wt_id="containerDeleteSalon" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtDeleteCodigoSalon" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Codigo del Salon"/>
+     <WObject Wt_id="btnDeleteSalon" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Eliminar Salon" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpCursos" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de cursos">
+   <WObject Wt_id="grpAddCurso" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Agregar Curso">
+    <WObject Wt_id="containerAddCurso" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtAddCodigoCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="N%C3%BAmero de C%C3%B3digo"/>
+     <WObject Wt_id="edtAddNombreCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del Curso"/>
+     <WObject Wt_id="edtAddSemestreCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Semestre del Curso"/>
+     <WObject Wt_id="edtAddCreditoCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Creditos del Curso"/>
+     <WObject Wt_id="btnAddCurso" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Agregar Curso" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpEditCurso" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Editar Curso">
+    <WObject Wt_id="containerEditCurso" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtEditCodigoCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="N%C3%BAmero de C%C3%B3digo"/>
+     <WObject Wt_id="edtEditNombreCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del Curso"/>
+     <WObject Wt_id="edtEditSemestreCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Semestre del Curso"/>
+     <WObject Wt_id="edtEditCreditoCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Creditos del Curso"/>
+     <WObject Wt_id="btnEditCurso" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Editar Curso" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpDeleteCurso" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Eliminar Curso">
+    <WObject Wt_id="containerDeleteCurso" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtDeleteCodigoCurso" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="C%C3%B3digo del Curso"/>
+     <WObject Wt_id="btnDeleteCurso" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Eliminar Curso" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpEstudiantes" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de estudiantes">
+   <WObject Wt_id="grpAddEstudiante" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Agregar Estudiante">
+    <WObject Wt_id="containerAddEstudiante" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtAddCarneEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="N%C3%BAmero de carnet"/>
+     <WObject Wt_id="edtAddNombreEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del estudiante"/>
+     <WObject Wt_id="edtAddCiudadEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Ciudad del estudiante"/>
+     <WObject Wt_id="btnAddEstudiante" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Agregar Estudiante" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpEditEstudiante" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Editar Estudiante">
+    <WObject Wt_id="containeEditEstudiante" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtEditCarneEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="N%C3%BAmero de carnet"/>
+     <WObject Wt_id="edtEditNombreEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del estudiante"/>
+     <WObject Wt_id="edtEditCiudadEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Ciudad del estudiante"/>
+     <WObject Wt_id="btnEditEstudiante" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Editar Estudiante" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpDeleteEstudiante" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Eliminar Estudiante">
+    <WObject Wt_id="containerDeleteEstudiante" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtDeleteCarneEstudiante" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Carnet del estudiante"/>
+     <WObject Wt_id="btnDeleteEstudiante" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Eliminar Estudiante" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpCatedraticos" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de catedr%C3%A1ticos">
+   <WObject Wt_id="grpAddCatedratico" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Agregar Catedratico">
+    <WObject Wt_id="containerAddCatedratico" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtAddCodigoCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="C%C3%B3digo del Catedr%C3%A1tico"/>
+     <WObject Wt_id="edtAddNombreCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del Catedratico"/>
+     <WObject Wt_id="edtAddCiudadCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Ciudad del Catedratico"/>
+     <WObject Wt_id="btnAddCatedratico" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Agregar Catedratico" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpEditCatedratico" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Editar Catedratico">
+    <WObject Wt_id="containerEditCatedratico" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtEditCodigoCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="C%C3%B3digo del Catedr%C3%A1tico"/>
+     <WObject Wt_id="edtEditNombreCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Nombre del Catedratico"/>
+     <WObject Wt_id="edtEditCiudadCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="Ciudad del Catedratico"/>
+     <WObject Wt_id="btnEditCatedratico" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Editar Catedratico" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+   <WObject Wt_id="grpDeleteCatedratico" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group subgroup" Wt_title="Eliminar Catedratico">
+    <WObject Wt_id="containerDeleteCatedratico" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+     <WObject Wt_id="edtDeleteCodigoCatedratico" Wt_className="WLineEdit" Wt_isInline="1" Wt_styleClass="item form-control" Wt_emptyText="C%C3%B3digo del Catedratico"/>
+     <WObject Wt_id="btnDeleteCatedratico" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Eliminar Catedratico" Wt_emptyText=""/>
+    </WObject>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpHorario" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de horarios"/>
+  <WObject Wt_id="grpAsignaciones" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Gesti%C3%B3n de asignaciones"/>
+  <WObject Wt_id="grpReportes" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Reportes">
+   <WObject Wt_id="containerReportes" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+    <WObject Wt_id="btnGraficoUsuario" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Usuario" Wt_emptyText=""/>
+    <WObject Wt_id="btnGraficoEyS" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Edificios y Salones" Wt_emptyText=""/>
+    <WObject Wt_id="btnGraficoCursos" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Cursos" Wt_emptyText=""/>
+    <WObject Wt_id="btnGraficoEstudiantes" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Estudiantes" Wt_emptyText=""/>
+    <WObject Wt_id="btnGraficoCatedraticos" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Catedr%C3%A1ticos" Wt_emptyText=""/>
+    <WObject Wt_id="btnGraficoHorarios" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Horarios" Wt_emptyText=""/>
+    <WObject Wt_id="btnGraficoAsignaciones" Wt_link="" Wt_className="WPushButton" Wt_isInline="1" Wt_styleClass="btn-primary btn item with-label btn-default" Wt_text="Asignaciones" Wt_emptyText=""/>
+   </WObject>
+  </WObject>
+  <WObject Wt_id="grpArchivos" Wt_htmlTagName="fieldset" Wt_className="WGroupBox" Wt_isInline="0" Wt_styleClass="group" Wt_title="Selector de archivos">
+   <WObject Wt_id="containerArchivos" Wt_htmlTagName="div" Wt_className="WContainerWidget" Wt_isInline="0" Wt_styleClass="container">
+    <WObject Wt_id="fileupload" Wt_className="WFileUpload" Wt_isInline="0" Wt_styleClass="fileupload item"/>
+   </WObject>
+  </WObject>
+ </WRoot>
+</WtCreator>
