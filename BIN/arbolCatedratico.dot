@@ -1,0 +1,24 @@
+digraph arbolCatedratico
+{
+	rankdir=TB;
+	node [shape=record]
+
+	ndnaruto[label="<izq> | naruto 2 | <dch>"];
+
+	ndnaruto : izq -> ndgoku;
+
+	ndnaruto : dch -> nderen;
+
+	ndgoku[label="<izq> | goku 1 | <dch>"];
+
+	nderen[label="<izq> | eren 6 | <dch>"];
+
+	nderen : izq -> ndkaneki;
+
+	nderen : dch -> ndshikamaru;
+
+	ndkaneki[label="<izq> | kaneki 3 | <dch>"];
+
+	ndshikamaru[label="<izq> | shikamaru 20 | <dch>"];
+
+}

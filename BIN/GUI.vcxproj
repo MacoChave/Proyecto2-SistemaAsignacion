@@ -316,16 +316,20 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\GUI\catedratico.cpp" />
     <ClCompile Include="..\GUI\Cursos.cpp" />
     <ClCompile Include="..\GUI\edificio.cpp" />
     <ClCompile Include="..\GUI\lib.cpp" />
+    <ClCompile Include="..\GUI\nodocatedratico.cpp" />
     <ClCompile Include="..\GUI\salon.cpp" />
     <ClCompile Include="..\GUI\usuarios.cpp" />
     <ClCompile Include="D:\Totto\Visual Studio 2013\Proyecto2\GUI\main.cpp" />
     <ClCompile Include="D:\Totto\Visual Studio 2013\Proyecto2\GUI\gui.cpp" />
+    <ClInclude Include="..\GUI\catedratico.h" />
     <ClInclude Include="..\GUI\Cursos.h" />
     <ClInclude Include="..\GUI\edificio.h" />
     <ClInclude Include="..\GUI\lib.h" />
+    <ClInclude Include="..\GUI\nodocatedratico.h" />
     <ClInclude Include="..\GUI\salon.h" />
     <ClInclude Include="..\GUI\usuarios.h" />
     <ClInclude Include="D:\Totto\Visual Studio 2013\Proyecto2\GUI\gui.h" />

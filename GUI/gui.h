@@ -7,6 +7,7 @@
 #include "edificio.h"
 #include "Cursos.h"
 #include "usuarios.h"
+#include "catedratico.h"
 
 class GUI : public Wt::WApplication
 {
@@ -32,6 +33,7 @@ private:
 	Edificio *listadoEdificio;
 	Curso *listadoCurso;
 	Usuario *listadoUsuario;
+	Catedratico *arbolCatedratico;
 };
 
 #endif // GUI_H

@@ -6,6 +6,8 @@ GUI::GUI(const Wt::WEnvironment& env) : Wt::WApplication(env), ui(new Ui_GUI)
 	listadoEdificio = new Edificio();
 	listadoCurso = new Curso();
 	listadoUsuario = new Usuario();
+	arbolCatedratico = new Catedratico();
+
 	ocultarGrupos();
 
 	ui->btnLogin->clicked().connect(this, &GUI::on_btnLoginClicked);
@@ -214,7 +216,20 @@ void GUI::on_btnAddClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Catedratico") == 0)
 	{
+		int id = atoi(ui->edtAddCodigoCatedratico->text().toUTF8().c_str());
+		char *nombre = new char[strlen(ui->edtAddNombreCatedratico->text().toUTF8().c_str()) + 1];
+		char *direccion = new char[strlen(ui->edtAddCiudadCatedratico->text().toUTF8().c_str()) + 1 ];
 
+		strcpy(nombre, ui->edtAddNombreCatedratico->text().toUTF8().c_str());
+		strcpy(direccion, ui->edtAddCiudadCatedratico->text().toUTF8().c_str());
+
+		arbolCatedratico->insertar(id, nombre, direccion);
+
+		ui->edtAddCodigoCatedratico->setText("");
+		ui->edtAddNombreCatedratico->setText("");
+		ui->edtAddCiudadCatedratico->setText("");
+
+		ui->edtAddCodigoCatedratico->setFocus(true);
 	}
 }
 
@@ -246,7 +261,20 @@ void GUI::on_btnEditClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Catedratico") == 0)
 	{
+		int id = atoi(ui->edtEditCodigoCatedratico->text().toUTF8().c_str());
+		char *nombre = new char[strlen(ui->edtEditNombreCatedratico->text().toUTF8().c_str()) + 1];
+		char *direccion = new char[strlen(ui->edtEditCiudadCatedratico->text().toUTF8().c_str()) + 1];
 
+		strcpy(nombre, ui->edtEditNombreCatedratico->text().toUTF8().c_str());
+		strcpy(direccion, ui->edtEditCiudadCatedratico->text().toUTF8().c_str());
+
+		arbolCatedratico->modificar(id, nombre, direccion);
+
+		ui->edtEditCodigoCatedratico->setText("");
+		ui->edtEditNombreCatedratico->setText("");
+		ui->edtEditCiudadCatedratico->setText("");
+
+		ui->edtEditCodigoCatedratico->setFocus(true);
 	}
 }
 
@@ -278,7 +306,12 @@ void GUI::on_btnDeleteClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Catedratico") == 0)
 	{
+		int id = atoi(ui->edtDeleteCodigoCatedratico->text().toUTF8().c_str());
 
+		arbolCatedratico->eliminar(id);
+
+		ui->edtDeleteCodigoCatedratico->setText("");
+		ui->edtDeleteCodigoCatedratico->setFocus(true);
 	}
 }
 
@@ -306,7 +339,7 @@ void GUI::on_btnGraficoClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Catedraticos") == 0)
 	{
-
+		arbolCatedratico->graficar();
 	}
 	if (strcmp(v, "Horarios") == 0)
 	{
