@@ -5,9 +5,11 @@ GUI::GUI(const Wt::WEnvironment& env) : Wt::WApplication(env), ui(new Ui_GUI)
 	ui->setupUi(root());
 	listadoEdificio = new Edificio();
 	listadoCurso = new Curso();
+	listadoUsuario = new Usuario();
 	ocultarGrupos();
 
 	ui->btnLogin->clicked().connect(this, &GUI::on_btnLoginClicked);
+	ui->btnLogout->clicked().connect(this, &GUI::on_btnLogoutClicked);
 
 	ui->btnAddUsuario->clicked().connect(boost::bind(&GUI::on_btnAddClicked, this, "Usuario"));
 	ui->btnAddEdificio->clicked().connect(boost::bind(&GUI::on_btnAddClicked, this, "Edificio"));
@@ -37,6 +39,8 @@ GUI::GUI(const Wt::WEnvironment& env) : Wt::WApplication(env), ui(new Ui_GUI)
 	ui->btnGraficoCatedraticos->clicked().connect(boost::bind(&GUI::on_btnGraficoClicked, this, "Catedraticos"));
 	ui->btnGraficoHorarios->clicked().connect(boost::bind(&GUI::on_btnGraficoClicked, this, "Horarios"));
 	ui->btnGraficoAsignaciones->clicked().connect(boost::bind(&GUI::on_btnGraficoClicked, this, "Asignaciones"));
+
+	ui->btnFile->clicked().connect(this, &GUI::on_btnFileClicked);
 }
 
 GUI::~GUI()
@@ -46,22 +50,91 @@ GUI::~GUI()
 
 void GUI::ocultarGrupos()
 {
-	ui->grpLogin->setStyleClass("group");
-	ui->grpEstudiante->setStyleClass("ocultar");
-	ui->grpUsuarios->setStyleClass("ocultar");
-	ui->grpEdificios->setStyleClass("ocultar");
-	ui->grpCursos->setStyleClass("ocultar");
-	ui->grpEstudiantes->setStyleClass("ocultar");
-	ui->grpCatedraticos->setStyleClass("ocultar");
-	ui->grpHorario->setStyleClass("ocultar");
-	ui->grpAsignaciones->setStyleClass("ocultar");
-	ui->grpReportes->setStyleClass("ocultar");
-	ui->grpArchivos->setStyleClass("ocultar");
+	ui->grpLogin->show();
+	ui->txtWarninLogin->hide();
+	ui->grpEstudiante->hide();
+	ui->grpUsuarios->hide();
+	ui->grpEdificios->hide();
+	ui->grpCursos->hide();
+	ui->grpEstudiantes->hide();
+	ui->grpCatedraticos->hide();
+	ui->grpHorario->hide();
+	ui->grpAsignaciones->hide();
+	ui->grpReportes->hide();
+	ui->grpArchivos->hide();
+	ui->grpLogout->hide();
 }
 
 void GUI::on_btnLoginClicked()
 {
+	char *usuario = new char[strlen(ui->edtUserLogin->text().toUTF8().c_str())];
+	char *pass = new char[strlen(ui->edtPassLogin->text().toUTF8().c_str())];
+	strcpy(usuario, ui->edtUserLogin->text().toUTF8().c_str());
+	strcpy(pass, ui->edtPassLogin->text().toUTF8().c_str());
+	char tipo[15];
+	strcpy(tipo, listadoUsuario->check(usuario, pass));
+	
+	if (strcmp(tipo, "colaborador") == 0)
+	{
+		ui->edtUserLogin->setText("");
+		ui->edtPassLogin->setText("");
 
+		ui->grpLogin->hide();
+		ui->txtWarninLogin->hide();
+		ui->grpEdificios->show();
+		ui->grpCursos->show();
+		ui->grpEstudiantes->show();
+		ui->grpCatedraticos->show();
+		ui->grpHorario->show();
+		ui->grpAsignaciones->show();
+		ui->grpReportes->show();
+		ui->grpLogout->show();
+	}
+	else if (strcmp(tipo, "estudiante") == 0)
+	{
+		ui->edtUserLogin->setText("");
+		ui->edtPassLogin->setText("");
+
+		ui->grpLogin->hide();
+		ui->txtWarninLogin->hide();
+		ui->grpEstudiante->show();
+	}
+	else if (strcmp(tipo, "super") == 0)
+	{
+		ui->edtUserLogin->setText("");
+		ui->edtPassLogin->setText("");
+
+		ui->grpLogin->hide();
+		ui->txtWarninLogin->hide();
+		ui->grpEdificios->show();
+		ui->grpUsuarios->show();
+		ui->grpCursos->show();
+		ui->grpAsignaciones->show();
+		ui->grpReportes->show();
+		ui->grpArchivos->show();
+		ui->grpLogout->show();
+	}
+	else
+	{
+		if (strcmp(usuario, "root") == 0 && strcmp(pass, "toor") == 0)
+		{
+			ui->edtUserLogin->setText("");
+			ui->edtPassLogin->setText("");
+
+			ui->grpLogin->hide();
+			ui->txtWarninLogin->hide();
+			ui->grpUsuarios->show();
+			ui->grpArchivos->show();
+			ui->grpLogout->show();
+		}
+		else
+			ui->txtWarninLogin->show();
+	}
+}
+
+void GUI::on_btnLogoutClicked()
+{
+	ocultarGrupos();
 }
 
 void GUI::on_btnAddClicked(Wt::WString value)
@@ -72,7 +145,21 @@ void GUI::on_btnAddClicked(Wt::WString value)
 
 	if (strcmp(v, "Usuario") == 0)
 	{
+		char *nombre = new char[strlen(ui->edtAddUsuario->text().toUTF8().c_str()) + 1];
+		char *pass = new char[strlen(ui->edtAddPassUsuario->text().toUTF8().c_str()) + 1];
+		char *tipo = new char[strlen(ui->edtAddTipoUsuario->text().toUTF8().c_str()) + 1];
 
+		strcpy(nombre, ui->edtAddUsuario->text().toUTF8().c_str());
+		strcpy(pass, ui->edtAddPassUsuario->text().toUTF8().c_str());
+		strcpy(tipo, ui->edtAddTipoUsuario->text().toUTF8().c_str());
+
+		listadoUsuario->add(nombre, pass, tipo);
+
+		ui->edtAddUsuario->setText("");
+		ui->edtAddPassUsuario->setText("");
+		ui->edtAddTipoUsuario->setText("");
+
+		ui->edtAddUsuario->setFocus(true);
 	}
 	if (strcmp(v, "Edificio") == 0)
 	{
@@ -203,7 +290,7 @@ void GUI::on_btnGraficoClicked(Wt::WString value)
 
 	if (strcmp(v, "Usuario") == 0)
 	{
-
+		listadoUsuario->graph();
 	}
 	if (strcmp(v, "EyS") == 0)
 	{
@@ -229,4 +316,9 @@ void GUI::on_btnGraficoClicked(Wt::WString value)
 	{
 
 	}
+}
+
+void GUI::on_btnFileClicked()
+{
+	ui->fileupload->upload();
 }

@@ -6,6 +6,7 @@
 #include "ui_gui.h"
 #include "edificio.h"
 #include "Cursos.h"
+#include "usuarios.h"
 
 class GUI : public Wt::WApplication
 {
@@ -17,16 +18,20 @@ public:
 	void ocultarGrupos();
 	// declare slots here
 	void on_btnLoginClicked();
+	void on_btnLogoutClicked();
 	
 	void on_btnAddClicked(Wt::WString value);
 	void on_btnEditClicked(Wt::WString value);
 	void on_btnDeleteClicked(Wt::WString value);
 
 	void on_btnGraficoClicked(Wt::WString value);
+
+	void on_btnFileClicked();
 private:
 	Ui_GUI *ui;
 	Edificio *listadoEdificio;
 	Curso *listadoCurso;
+	Usuario *listadoUsuario;
 };
 
 #endif // GUI_H

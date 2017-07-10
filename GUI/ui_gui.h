@@ -137,6 +137,10 @@ public:
 	Wt::WGroupBox *grpArchivos;
 	Wt::WContainerWidget *containerArchivos;
 	Wt::WFileUpload *fileupload;
+	Wt::WPushButton *btnFile;
+	Wt::WGroupBox *grpLogout;
+	Wt::WContainerWidget *containerLogout;
+	Wt::WPushButton *btnLogout;
 
 	void setupUi(Wt::WContainerWidget *PageRoot)
 	{
@@ -144,7 +148,7 @@ public:
 		Wt::WBootstrapTheme * p_wtTheme = new Wt::WBootstrapTheme();
 		p_wtTheme->setVersion(Wt::WBootstrapTheme::Version3);
 		Wt::WApplication::instance()->setTheme(p_wtTheme);
-		Wt::WApplication::instance()->setTitle("Untitled Wt Webapp");
+		Wt::WApplication::instance()->setTitle("Proyecto 2");
 
 		addAllStyleSheets();
 
@@ -897,6 +901,34 @@ public:
 					fileupload->setId("fileupload");
 					fileupload->setStyleClass(Wt::WString::fromUTF8("fileupload item"));
 					fileupload->setInline(0);
+					btnFile = new Wt::WPushButton(containerArchivos);
+					btnFile->setId("btnFile");
+					btnFile->setStyleClass(Wt::WString::fromUTF8("btn-default with-label btn-primary btn item btn btn-default with-label"));
+					btnFile->setInline(1);
+					btnFile->setEmptyText(Wt::WString::fromUTF8(""));
+					btnFile->setText(Wt::WString::fromUTF8("Subir archivo"));
+					btnFile->setLink(Wt::WLink(""));
+				}
+			}
+			grpLogout = new Wt::WGroupBox(wt_root);
+			grpLogout->setId("grpLogout");
+			grpLogout->setStyleClass(Wt::WString::fromUTF8("group"));
+			grpLogout->setInline(0);
+			grpLogout->setTitle(Wt::WString::fromUTF8("Cerrar de Sesión"));
+			{
+				containerLogout = new Wt::WContainerWidget(grpLogout);
+				containerLogout->setId("containerLogout");
+				containerLogout->setStyleClass(Wt::WString::fromUTF8("container"));
+				containerLogout->setInline(0);
+				containerLogout->setHtmlTagName("div");
+				{
+					btnLogout = new Wt::WPushButton(containerLogout);
+					btnLogout->setId("btnLogout");
+					btnLogout->setStyleClass(Wt::WString::fromUTF8("btn-default with-label btn-primary btn item btn btn-default with-label"));
+					btnLogout->setInline(1);
+					btnLogout->setEmptyText(Wt::WString::fromUTF8(""));
+					btnLogout->setText(Wt::WString::fromUTF8("Logout"));
+					btnLogout->setLink(Wt::WLink(""));
 				}
 			}
 		}

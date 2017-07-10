@@ -155,5 +155,5 @@ char* NodoCurso::toString()
 	char nodo[50];
 	sprintf(nodo, "%d\\n", codigo);
 	strcat(nodo, nombre);
-	return nombre;
+	return nodo;
 }

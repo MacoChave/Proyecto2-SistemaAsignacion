@@ -19,6 +19,9 @@
     <ClCompile Include="..\GUI\Cursos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\GUI\usuarios.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Totto\Visual Studio 2013\Proyecto2\GUI\gui.h">
@@ -37,6 +40,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\GUI\Cursos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GUI\usuarios.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

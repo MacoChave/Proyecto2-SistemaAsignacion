@@ -1,0 +1,13 @@
+digraph usuarios {
+	nodesep=.05;
+	rankdir=LR
+	node [shape=record,width=1.5,height=.5];
+
+USARMIN[label = "ARMIN\ncolaborador "];
+USARMIN -> USIZAYA;
+
+USIZAYA[label = "IZAYA\ncolaborador"];
+USIZAYA -> USSHIRO;
+
+USSHIRO[label = "SHIRO\ncolaborador"];
+}

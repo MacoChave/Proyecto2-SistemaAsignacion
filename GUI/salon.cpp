@@ -106,10 +106,8 @@ void Salon::graph(NodoSalon *actual)
 	if (actual != NULL)
 	{
 		char dot[50];
-		//strcpy(dot, edificio);
 		strcat(dot, actual->toGraph());
 		strcat(dot, ";\n");
-		//strcat(dot, edificio);
 		strcat(dot, actual->toGraph());
 		strcat(dot, "[label = \"");
 		strcat(dot, actual->toString());
@@ -117,14 +115,14 @@ void Salon::graph(NodoSalon *actual)
 		strcat(dot, "\n");
 		if (actual->siguiente != NULL)
 		{
-			//strcat(dot, edificio);
 			strcat(dot, actual->toGraph());
 			strcat(dot, " -> ");
 
 			escribir("edificio.dot", dot, "a");
 		}
 
-		graph(actual->siguiente);
+		if (actual->siguiente != NULL)
+			graph(actual->siguiente);
 	}
 }
 
