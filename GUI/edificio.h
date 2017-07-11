@@ -11,6 +11,7 @@ public:
 	Salon *salones;
 	NodoEdificio *anterior;
 	NodoEdificio *siguiente;
+	
 	char* toGraph();
 	char* toString();
 private:
@@ -29,11 +30,13 @@ public:
 	void add(char *nombre);
 	void addSalon(char *nombre, int numero, int capacidad);
 	void remove(char *nombre);
+	void removeSalon(char *nombre, int salon);
 	NodoEdificio* getNodoEdificio(char *nombre);
 	void graph();
 private:
 	void add(NodoEdificio *actual, char *nombre);
 	void remove(NodoEdificio *actual, char *nombre);
+	void removeSalon(NodoEdificio *actual, char *nombre, int salon);
 	NodoEdificio* getNodoEdificio(NodoEdificio *actual, char *nombre);
 	void escribir(char filename[], char texto[], char *modo);
 	void graph(NodoEdificio *actual);

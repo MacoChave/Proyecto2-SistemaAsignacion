@@ -3,11 +3,14 @@ digraph usuarios {
 	rankdir=LR
 	node [shape=record,width=1.5,height=.5];
 
-USARMIN[label = "ARMIN\ncolaborador "];
-USARMIN -> USIZAYA;
+USarmin[label = "armin\ncolaborador"];
+USarmin -> USizaya;
 
-USIZAYA[label = "IZAYA\ncolaborador"];
-USIZAYA -> USSHIRO;
+USizaya[label = "izaya\ncolaborador"];
+USizaya -> USsakamoto;
 
-USSHIRO[label = "SHIRO\ncolaborador"];
+USsakamoto[label = "sakamoto\nsuper"];
+USsakamoto -> USshiro;
+
+USshiro[label = "shiro\nestudiante"];
 }

@@ -52,7 +52,7 @@ public:
 	Wt::WPushButton *btnEditEdificio;
 	Wt::WGroupBox *grpDeleteEdificio;
 	Wt::WContainerWidget *containerDeleteEdificio;
-	Wt::WLineEdit *edtDeleteCodigoEdificio;
+	Wt::WLineEdit *edtDeleteNombreEdificio;
 	Wt::WPushButton *btnDeleteEdificio;
 	Wt::WGroupBox *grpAddSalon;
 	Wt::WContainerWidget *containerAddSalon;
@@ -68,6 +68,7 @@ public:
 	Wt::WPushButton *btnEditSalon;
 	Wt::WGroupBox *grpDeleteSalon;
 	Wt::WContainerWidget *containerDeleteSalon;
+	Wt::WLineEdit *edtDeleteEdificioSalon;
 	Wt::WLineEdit *edtDeleteCodigoSalon;
 	Wt::WPushButton *btnDeleteSalon;
 	Wt::WGroupBox *grpCursos;
@@ -374,11 +375,11 @@ public:
 					containerDeleteEdificio->setInline(0);
 					containerDeleteEdificio->setHtmlTagName("div");
 					{
-						edtDeleteCodigoEdificio = new Wt::WLineEdit(containerDeleteEdificio);
-						edtDeleteCodigoEdificio->setId("edtDeleteCodigoEdificio");
-						edtDeleteCodigoEdificio->setStyleClass(Wt::WString::fromUTF8("form-control item form-control"));
-						edtDeleteCodigoEdificio->setInline(1);
-						edtDeleteCodigoEdificio->setEmptyText(Wt::WString::fromUTF8("Codigot del Edificio"));
+						edtDeleteNombreEdificio = new Wt::WLineEdit(containerDeleteEdificio);
+						edtDeleteNombreEdificio->setId("edtDeleteNombreEdificio");
+						edtDeleteNombreEdificio->setStyleClass(Wt::WString::fromUTF8("form-control item form-control"));
+						edtDeleteNombreEdificio->setInline(1);
+						edtDeleteNombreEdificio->setEmptyText(Wt::WString::fromUTF8("Nombre del Edificio"));
 						btnDeleteEdificio = new Wt::WPushButton(containerDeleteEdificio);
 						btnDeleteEdificio->setId("btnDeleteEdificio");
 						btnDeleteEdificio->setStyleClass(Wt::WString::fromUTF8("btn-default with-label btn-primary btn item btn btn-default with-label"));
@@ -472,6 +473,11 @@ public:
 					containerDeleteSalon->setInline(0);
 					containerDeleteSalon->setHtmlTagName("div");
 					{
+						edtDeleteEdificioSalon = new Wt::WLineEdit(containerDeleteSalon);
+						edtDeleteEdificioSalon->setId("edtDeleteEdificioSalon");
+						edtDeleteEdificioSalon->setStyleClass(Wt::WString::fromUTF8("form-control item form-control"));
+						edtDeleteEdificioSalon->setInline(1);
+						edtDeleteEdificioSalon->setEmptyText(Wt::WString::fromUTF8("Edificio"));
 						edtDeleteCodigoSalon = new Wt::WLineEdit(containerDeleteSalon);
 						edtDeleteCodigoSalon->setId("edtDeleteCodigoSalon");
 						edtDeleteCodigoSalon->setStyleClass(Wt::WString::fromUTF8("form-control item form-control"));

@@ -100,6 +100,7 @@ void GUI::on_btnLoginClicked()
 		ui->grpLogin->hide();
 		ui->txtWarninLogin->hide();
 		ui->grpEstudiante->show();
+		ui->grpLogout->show();
 	}
 	else if (strcmp(tipo, "super") == 0)
 	{
@@ -290,11 +291,26 @@ void GUI::on_btnDeleteClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Edificio") == 0)
 	{
+		char *nombre = new char[strlen(ui->edtDeleteNombreEdificio->text().toUTF8().c_str()) + 1];
+		strcpy(nombre, ui->edtDeleteNombreEdificio->text().toUTF8().c_str());
 
+		listadoEdificio->remove(nombre);
+
+		ui->edtDeleteNombreEdificio->setText("");
+		ui->edtDeleteNombreEdificio->setFocus(true);
 	}
 	if (strcmp(v, "Salon") == 0)
 	{
+		char *edificio = new char[strlen(ui->edtDeleteEdificioSalon->text().toUTF8().c_str()) + 1];
+		int salon = atoi(ui->edtDeleteCodigoSalon->text().toUTF8().c_str());
 
+		strcpy(edificio, ui->edtDeleteEdificioSalon->text().toUTF8().c_str());
+
+		listadoEdificio->removeSalon(edificio, salon);
+
+		ui->edtDeleteEdificioSalon->setText("");
+		ui->edtDeleteCodigoSalon->setText("");
+		ui->edtDeleteEdificioSalon->setFocus(true);
 	}
 	if (strcmp(v, "Curso") == 0)
 	{
@@ -355,3 +371,4 @@ void GUI::on_btnFileClicked()
 {
 	ui->fileupload->upload();
 }
+

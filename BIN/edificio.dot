@@ -2,11 +2,13 @@ digraph edificio {
 	nodesep=.05;
 	node [shape=record,width=1.5,height=.5];
 
-EDT3[label = "T-3"];
+EDT3[label = "T3"];
 EDT3 -> EDT7;
 
-EDT7[label = "T-7"];
+EDT7[label = "T7"];
 
-EDT3 -> лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл{8╟EMkSL105;
-SL105[label = "105\n120"];
-SL16 -> 
+EDT3 -> SL115;
+SL115[label = "115\n120"];
+SL115 -> 
+EDT7[label = "T7"];
+}

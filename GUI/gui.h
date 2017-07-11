@@ -34,6 +34,8 @@ private:
 	Curso *listadoCurso;
 	Usuario *listadoUsuario;
 	Catedratico *arbolCatedratico;
+
+
 };
 
 #endif // GUI_H

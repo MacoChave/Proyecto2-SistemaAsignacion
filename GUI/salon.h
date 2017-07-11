@@ -26,10 +26,12 @@ public:
 
 	void add(int numero, int capacidad);
 	void remove(int numero);
+	void clear();
 	void graph();
 	void escribir(char filename[], char texto[], char *modo);
 private:
 	void add(NodoSalon *actual, int numero, int capacidad);
-	void remove(NodoSalon *actual, int numero, int capacidad);
+	void remove(NodoSalon *actual, int numero);
+	void clear(NodoSalon **actual);
 	void graph(NodoSalon *actual);
 };

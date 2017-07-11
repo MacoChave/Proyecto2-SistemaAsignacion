@@ -6,12 +6,16 @@ NodoEdificio::NodoEdificio(char *nombre_)
 	nombre = new char[strlen(nombre_) + 1];
 	strcpy(nombre, nombre_);
 	salones = new Salon();
+	anterior = NULL;
+	siguiente = NULL;
 }
 
 NodoEdificio::~NodoEdificio()
 {
 	delete[](nombre);
-	salones = NULL;
+	delete(salones);
+	anterior = NULL;
+	siguiente = NULL;
 }
 
 Edificio::Edificio()
@@ -86,12 +90,100 @@ void Edificio::addSalon(char *nombre, int numero, int capacidad)
 
 void Edificio::remove(char *nombre)
 {
-
+	if (primero != NULL)
+		remove(primero, nombre);
 }
 
 void Edificio::remove(NodoEdificio *actual, char *nombre)
 {
+	if (actual != NULL)
+	{
+		if (strcmp(primero->nombre, nombre) == 0)
+		{
+			NodoEdificio *temp = primero;
+			primero = temp->siguiente;
+			ultimo->siguiente = primero;
+			primero->anterior = ultimo;
 
+			delete(temp);
+		}
+		else if (strcmp(ultimo->nombre, nombre) == 0)
+		{
+			NodoEdificio *temp = ultimo;
+			ultimo = temp->anterior;
+			ultimo->siguiente = primero;
+			primero->anterior = ultimo;
+
+			delete(temp);
+		}
+		else
+		{
+			if (strcmp(actual->nombre, nombre) < 0)
+			{
+				if (actual->siguiente != primero)
+					remove(actual->siguiente, nombre);
+			}
+			else if (strcmp(actual->nombre, nombre) == 0)
+			{
+				actual->anterior->siguiente = actual->siguiente;
+				actual->siguiente->anterior = actual->anterior;
+
+				delete(actual);
+			}
+		}
+	}
+}
+
+void Edificio::removeSalon(char *nombre, int salon)
+{
+	if (primero != NULL)
+		removeSalon(primero, nombre, salon);
+}
+
+void Edificio::removeSalon(NodoEdificio *actual, char *nombre, int salon)
+{
+	if (actual != NULL)
+	{
+		if (strcmp(primero->nombre, nombre) == 0)
+		{
+			primero->salones->remove(salon);
+
+			/*NodoEdificio *temp = primero;
+			primero = temp->siguiente;
+			ultimo->siguiente = primero;
+			primero->anterior = ultimo;
+
+			delete(temp);*/
+		}
+		else if (strcmp(ultimo->nombre, nombre) == 0)
+		{
+			ultimo->salones->remove(salon);
+
+			/*NodoEdificio *temp = ultimo;
+			ultimo = temp->anterior;
+			ultimo->siguiente = primero;
+			primero->anterior = ultimo;
+
+			delete(temp);*/
+		}
+		else
+		{
+			if (strcmp(actual->nombre, nombre) < 0)
+			{
+				if (actual->siguiente != primero)
+					remove(actual->siguiente, nombre);
+			}
+			else if (strcmp(actual->nombre, nombre) == 0)
+			{
+				actual->salones->remove(salon);
+
+				/*actual->anterior->siguiente = actual->siguiente;
+				actual->siguiente->anterior = actual->anterior;
+
+				delete(actual);*/
+			}
+		}
+	}
 }
 
 NodoEdificio* Edificio::getNodoEdificio(char *nombre)
@@ -110,6 +202,8 @@ NodoEdificio* Edificio::getNodoEdificio(NodoEdificio *actual, char *nombre)
 		else
 			return NULL;
 	}
+	else
+		return NULL;
 }
 
 void Edificio::escribir(char filename[], char texto[], char *modo)
@@ -175,15 +269,11 @@ void Edificio::graph(NodoEdificio *actual)
 
 char* NodoEdificio::toGraph()
 {
-	char temp[8];
-	char nodo[8];
+	char temp[10];
 	strcpy(temp, "ED");
 	strcat(temp, nombre);
 
-	strcpy(nodo, strtok(temp, "-"));
-	strcat(nodo, strtok(NULL, "-"));
-
-	return nodo;
+	return temp;
 }
 
 char* NodoEdificio::toString()
@@ -195,7 +285,7 @@ void Edificio::graphSalones(NodoEdificio *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[50];
+		char dot[80];
 		strcpy(dot, "\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, " -> ");

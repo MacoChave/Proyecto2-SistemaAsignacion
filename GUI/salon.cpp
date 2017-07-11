@@ -72,12 +72,60 @@ void Salon::add(NodoSalon *actual, int numero, int capacidad)
 
 void Salon::remove(int numero)
 {
-
+	if (primero != NULL)
+		remove(primero, numero);
 }
 
-void Salon::remove(NodoSalon *actual, int numero, int capacidad)
+void Salon::remove(NodoSalon *actual, int numero)
 {
+	if (actual != NULL)
+	{
+		if (primero->numero == numero)
+		{
+			NodoSalon *temp = primero;
+			if (primero == ultimo)
+			{
+				primero = NULL;
+				ultimo = NULL;
+			}
+			else
+				primero = temp->siguiente;
 
+			delete(temp);
+			temp = NULL;
+		}
+		else if (actual != ultimo)
+		{
+			if (actual->siguiente->numero == numero)
+			{
+				NodoSalon *temp = actual->siguiente;
+				actual->siguiente = temp->siguiente;
+				if (temp->siguiente == NULL)
+					ultimo = actual;
+
+				delete(temp);
+			}
+			else if (actual->siguiente->numero < numero)
+			{
+				remove(actual->siguiente, numero);
+			}
+		}
+	}
+}
+
+void Salon::clear()
+{
+	if (primero != NULL)
+		clear(&primero);
+}
+
+void Salon::clear(NodoSalon **actual)
+{
+	if (*actual != ultimo)
+		clear(&((*actual)->siguiente));
+
+	delete(*actual);
+	*actual = NULL;
 }
 
 void Salon::escribir(char filename[], char texto[], char *modo)
@@ -106,21 +154,22 @@ void Salon::graph(NodoSalon *actual)
 	if (actual != NULL)
 	{
 		char dot[50];
-		strcat(dot, actual->toGraph());
+		strcpy(dot, actual->toGraph());
 		strcat(dot, ";\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, "[label = \"");
 		strcat(dot, actual->toString());
 		strcat(dot, "\"];");
 		strcat(dot, "\n");
+		
 		if (actual->siguiente != NULL)
 		{
 			strcat(dot, actual->toGraph());
 			strcat(dot, " -> ");
 
-			escribir("edificio.dot", dot, "a");
 		}
 
+		escribir("edificio.dot", dot, "a");
 		if (actual->siguiente != NULL)
 			graph(actual->siguiente);
 	}
