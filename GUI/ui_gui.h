@@ -137,7 +137,7 @@ public:
 	Wt::WPushButton *btnGraficoAsignaciones;
 	Wt::WGroupBox *grpArchivos;
 	Wt::WContainerWidget *containerArchivos;
-	Wt::WFileUpload *fileupload;
+	Wt::WFileUpload *fileUp;
 	Wt::WPushButton *btnFile;
 	Wt::WGroupBox *grpLogout;
 	Wt::WContainerWidget *containerLogout;
@@ -903,16 +903,17 @@ public:
 				containerArchivos->setInline(0);
 				containerArchivos->setHtmlTagName("div");
 				{
-					fileupload = new Wt::WFileUpload(containerArchivos);
-					fileupload->setId("fileupload");
-					fileupload->setStyleClass(Wt::WString::fromUTF8("fileupload item"));
-					fileupload->setInline(0);
+					fileUp = new Wt::WFileUpload(containerArchivos);
+					fileUp->setId("fileUp");
+					fileUp->setStyleClass(Wt::WString::fromUTF8("fileupload item"));
+					fileUp->setInline(0);
+					fileUp->setFileTextSize(50);
 					btnFile = new Wt::WPushButton(containerArchivos);
 					btnFile->setId("btnFile");
 					btnFile->setStyleClass(Wt::WString::fromUTF8("btn-default with-label btn-primary btn item btn btn-default with-label"));
 					btnFile->setInline(1);
 					btnFile->setEmptyText(Wt::WString::fromUTF8(""));
-					btnFile->setText(Wt::WString::fromUTF8("Subir archivo"));
+					btnFile->setText(Wt::WString::fromUTF8("Cargar archivo"));
 					btnFile->setLink(Wt::WLink(""));
 				}
 			}

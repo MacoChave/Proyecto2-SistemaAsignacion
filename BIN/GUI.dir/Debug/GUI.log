@@ -1,3 +1,15 @@
-﻿  edificio.cpp
-..\GUI\edificio.cpp(276): warning C4172: devolución de dirección de la variable local o temporal
-  GUI.vcxproj -> D:\Totto\Visual Studio 2013\Proyecto2\BIN\Debug\GUI.exe
+﻿  estudiante.cpp
+..\GUI\estudiante.cpp(13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : vea la declaración de 'strcpy'
+..\GUI\estudiante.cpp(15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : vea la declaración de 'strcpy'
+..\GUI\estudiante.cpp(65): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : vea la declaración de 'strcpy'
+..\GUI\estudiante.cpp(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : vea la declaración de 'strcpy'
+..\GUI\estudiante.cpp(86): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : vea la declaración de 'strcpy'
+..\GUI\estudiante.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : vea la declaración de 'strcpy'
+..\GUI\estudiante.cpp(126): error C2440: '=' : no se puede realizar la conversión de 'NodoEstudiante **' a 'NodoEstudiante *'
+          Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función

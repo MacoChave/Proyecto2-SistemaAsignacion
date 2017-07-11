@@ -83,12 +83,45 @@ void Usuario::add(NodoUsuario *actual, char *nombre, char *pass, char *tipo)
 
 void Usuario::remove(char *nombre)
 {
-
+	if (primero != NULL)
+		remove(primero, nombre);
 }
 
 void Usuario::remove(NodoUsuario *actual, char *nombre)
 {
+	if (actual != NULL)
+	{
+		if (strcmp(primero->nombre, nombre) == 0)
+		{
+			NodoUsuario *temp = primero;
+			if (primero == ultimo)
+			{
+				primero = NULL;
+				ultimo = NULL;
+			}
+			else
+			{
+				primero = primero->siguiente;
+				primero->anterior = NULL;
+			}
 
+			delete(temp);
+			temp = NULL;
+		}
+		else
+		{
+			if (strcmp(actual->nombre, nombre) == 0)
+			{
+				actual->anterior->siguiente = actual->siguiente;
+				actual->siguiente->anterior = actual->anterior;
+
+				delete(actual);
+				actual = NULL;
+			}
+			else if (strcmp(actual->nombre, nombre) < 0)
+				remove(actual->siguiente, nombre);
+		}
+	}
 }
 
 char* Usuario::check(char *nombre, char *pass)
@@ -108,10 +141,15 @@ char* Usuario::check(char *nombre, char *pass)
 
 char* Usuario::check(NodoUsuario *actual, char *nombre, char *pass)
 {
-	if (strcmp(actual->nombre, nombre) == 0 && strcmp(actual->pass, pass) == 0)
-		return actual->tipo;
-	else if (strcmp(actual->nombre, nombre) < 0 && strcmp(actual->pass, pass) < 0)
-		return check(actual->siguiente, nombre, pass);
+	if (actual != NULL)
+	{
+		if (strcmp(actual->nombre, nombre) == 0 && strcmp(actual->pass, pass) == 0)
+			return actual->tipo;
+		else if (strcmp(actual->nombre, nombre) < 0 && strcmp(actual->pass, pass) < 0)
+			return check(actual->siguiente, nombre, pass);
+		else
+			return "x";
+	}
 	else
 		return "x";
 }

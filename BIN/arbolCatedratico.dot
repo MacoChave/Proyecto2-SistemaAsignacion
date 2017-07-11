@@ -1,0 +1,84 @@
+digraph arbolCatedratico
+{
+	rankdir=TB;
+	node [shape=record]
+
+	ndLELOUCH[label="<izq> | LELOUCH 8 | <dch>"];
+
+	ndLELOUCH : izq -> ndLIGHT;
+
+	ndLELOUCH : dch -> ndOLIVER;
+
+	ndLIGHT[label="<izq> | LIGHT 4 | <dch>"];
+
+	ndLIGHT : izq -> ndNARUTO;
+
+	ndLIGHT : dch -> ndEREN;
+
+	ndNARUTO[label="<izq> | NARUTO 2 | <dch>"];
+
+	ndNARUTO : izq -> ndGOKY;
+
+	ndNARUTO : dch -> ndKANEKI;
+
+	ndGOKY[label="<izq> | GOKY 1 | <dch>"];
+
+	ndKANEKI[label="<izq> | KANEKI 3 | <dch>"];
+
+	ndEREN[label="<izq> | EREN 6 | <dch>"];
+
+	ndEREN : izq -> ndKIRITO;
+
+	ndEREN : dch -> ndASH;
+
+	ndKIRITO[label="<izq> | KIRITO 5 | <dch>"];
+
+	ndASH[label="<izq> | ASH 7 | <dch>"];
+
+	ndOLIVER[label="<izq> | OLIVER 16 | <dch>"];
+
+	ndOLIVER : izq -> ndLUCY;
+
+	ndOLIVER : dch -> ndMOKOTO;
+
+	ndLUCY[label="<izq> | LUCY 12 | <dch>"];
+
+	ndLUCY : izq -> ndISEI;
+
+	ndLUCY : dch -> ndRANMA;
+
+	ndISEI[label="<izq> | ISEI 10 | <dch>"];
+
+	ndISEI : izq -> ndYUGI;
+
+	ndISEI : dch -> ndSASUKE;
+
+	ndYUGI[label="<izq> | YUGI 9 | <dch>"];
+
+	ndSASUKE[label="<izq> | SASUKE 11 | <dch>"];
+
+	ndRANMA[label="<izq> | RANMA 14 | <dch>"];
+
+	ndRANMA : izq -> ndALUCARD;
+
+	ndRANMA : dch -> ndTAI;
+
+	ndALUCARD[label="<izq> | ALUCARD 13 | <dch>"];
+
+	ndTAI[label="<izq> | TAI 15 | <dch>"];
+
+	ndMOKOTO[label="<izq> | MOKOTO 18 | <dch>"];
+
+	ndMOKOTO : izq -> ndYUKITERU;
+
+	ndMOKOTO : dch -> ndKONOHAMARU;
+
+	ndYUKITERU[label="<izq> | YUKITERU 17 | <dch>"];
+
+	ndKONOHAMARU[label="<izq> | KONOHAMARU 19 | <dch>"];
+
+	ndKONOHAMARU : dch -> ndSHIKAMARU;
+
+	ndSHIKAMARU[label="<izq> | SHIKAMARU 20 | <dch>"];
+
+}

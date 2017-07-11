@@ -75,12 +75,42 @@ void Curso::add(NodoCurso *actual, int codigo, char *nombre, int semestre, int n
 
 void Curso::remove(int codigo)
 {
-
+	if (primero != NULL)
+		remove(primero, codigo);
 }
 
 void Curso::remove(NodoCurso *actual, int codigo)
 {
+	if (actual != NULL)
+	{
+		if (primero->codigo == codigo)
+		{
+			NodoCurso *temp = primero;
+			if (primero == ultimo)
+			{
+				ultimo = NULL;
+				primero = NULL;
+			}
+			else
+				primero = primero->siguiente;
 
+			delete(temp);
+			temp = NULL;
+		}
+		else
+		{
+			if (actual->siguiente->codigo == codigo)
+			{
+				NodoCurso *temp = actual->siguiente;
+				actual->siguiente = temp->siguiente;
+
+				delete(temp);
+				temp = NULL;
+			}
+			else if (actual->siguiente->codigo < codigo)
+				remove(actual->siguiente, codigo);
+		}
+	}
 }
 
 void Curso::escribir(char filename[], char texto[], char *modo)
@@ -122,7 +152,7 @@ void Curso::graph(NodoCurso *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[50];
+		char dot[80];
 		strcpy(dot, "\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, "[label = \"");

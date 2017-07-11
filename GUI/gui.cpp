@@ -7,6 +7,7 @@ GUI::GUI(const Wt::WEnvironment& env) : Wt::WApplication(env), ui(new Ui_GUI)
 	listadoCurso = new Curso();
 	listadoUsuario = new Usuario();
 	arbolCatedratico = new Catedratico();
+	hashEstudiante = new Estudiante();
 
 	ocultarGrupos();
 
@@ -43,6 +44,12 @@ GUI::GUI(const Wt::WEnvironment& env) : Wt::WApplication(env), ui(new Ui_GUI)
 	ui->btnGraficoAsignaciones->clicked().connect(boost::bind(&GUI::on_btnGraficoClicked, this, "Asignaciones"));
 
 	ui->btnFile->clicked().connect(this, &GUI::on_btnFileClicked);
+	/* SUBIR CUANDO EL BOTON ES CLICKEADO 
+	ui->btnFile->clicked().connect(ui->fileUp, &Wt::WFileUpload::upload);
+	ui->btnFile->clicked().connect(ui->btnFile, &Wt::WPushButton::disable);
+	*/
+	/* SUBIR AUTOMATICAMENTE */
+	ui->fileUp->changed().connect(ui->fileUp, &Wt::WFileUpload::upload);
 }
 
 GUI::~GUI()
@@ -213,7 +220,18 @@ void GUI::on_btnAddClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Estudiante") == 0)
 	{
+		int carnet = atoi(ui->edtAddCarneEstudiante->text().toUTF8().c_str());
+		char *nombre = new char[strlen(ui->edtAddNombreEstudiante->text().toUTF8().c_str()) + 1];
+		strcpy(nombre, ui->edtAddNombreEstudiante->text().toUTF8().c_str());
+		char *dir = new char[strlen(ui->edtAddCiudadEstudiante->text().toUTF8().c_str()) + 1];
+		strcpy(dir, ui->edtAddCiudadEstudiante->text().toUTF8().c_str());
 
+		hashEstudiante->insertar(carnet, nombre, dir);
+
+		ui->edtAddCarneEstudiante->setText("");
+		ui->edtAddNombreEstudiante->setText("");
+		ui->edtAddCiudadEstudiante->setText("");
+		ui->edtAddCarneEstudiante->setFocus(true);
 	}
 	if (strcmp(v, "Catedratico") == 0)
 	{
@@ -287,7 +305,13 @@ void GUI::on_btnDeleteClicked(Wt::WString value)
 
 	if (strcmp(v, "Usuario") == 0)
 	{
+		char *nombre = new char[strlen(ui->edtDeleteUsuario->text().toUTF8().c_str()) + 1];
+		strcpy(nombre, ui->edtDeleteUsuario->text().toUTF8().c_str());
 
+		listadoUsuario->remove(nombre);
+
+		ui->edtDeleteUsuario->setText("");
+		ui->edtDeleteUsuario->setFocus(true);
 	}
 	if (strcmp(v, "Edificio") == 0)
 	{
@@ -314,7 +338,12 @@ void GUI::on_btnDeleteClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Curso") == 0)
 	{
+		int codigo = atoi(ui->edtDeleteCodigoCurso->text().toUTF8().c_str());
 
+		listadoCurso->remove(codigo);
+
+		ui->edtDeleteCodigoCurso->setText("");
+		ui->edtDeleteCodigoCurso->setFocus(true);
 	}
 	if (strcmp(v, "Estudiante") == 0)
 	{
@@ -351,7 +380,7 @@ void GUI::on_btnGraficoClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Estudiantes") == 0)
 	{
-
+		hashEstudiante->graph();
 	}
 	if (strcmp(v, "Catedraticos") == 0)
 	{
@@ -369,6 +398,89 @@ void GUI::on_btnGraficoClicked(Wt::WString value)
 
 void GUI::on_btnFileClicked()
 {
-	ui->fileupload->upload();
+	//char *path = new char[strlen(ui->fileupload->text().toUTF8().c_str()) + 1];
+	//strcpy(path, ui->fileupload->text().toUTF8().c_str());
+	char *filename;
+	if (ui->fileUp->canUpload())
+	{
+		ui->fileUp->upload();
+		ui->fileUp->uploaded();
+		filename = new char[strlen(ui->fileUp->spoolFileName().c_str()) + 1];
+		strcpy(filename, ui->fileUp->spoolFileName().c_str());
+	}
+
+	//cargarArchivo("C:/Users/Totto/Desktop/datos.txt");
+	cargarArchivo(filename);
 }
 
+void GUI::cargarArchivo(char *path)
+{
+	char linea[128];
+	char campo1[25];
+	char campo2[25];
+	char campo3[30];
+	char campo4[25];
+	char campo5[25];
+
+	FILE *archivo;
+	archivo = fopen(path, "r");
+
+	if (archivo != NULL)
+	{
+		while (!feof(archivo))
+		{
+			fgets(linea, 128, archivo);
+
+			strcpy(campo1, strtok(linea, "()\",; "));
+			if (strcmp(campo1, "Usuario") == 0)
+			{
+				strcpy(campo2, strtok(NULL, "()\",; "));
+				strcpy(campo3, strtok(NULL, "()\",; "));
+				strcpy(campo4, strtok(NULL, "()\",; "));
+
+				listadoUsuario->add(campo2, campo3, campo4);
+			}
+			if (strcmp(campo1, "Estudiante") == 0)
+			{
+				strcpy(campo2, strtok(NULL, "()\",; "));
+				strcpy(campo3, strtok(NULL, "()\",; "));
+				strcpy(campo4, strtok(NULL, "()\",; "));
+
+				hashEstudiante->insertar(atoi(campo2), campo3, campo4);
+			}
+			if (strcmp(campo1, "Catedratico") == 0)
+			{
+				strcpy(campo2, strtok(NULL, "()\",; "));
+				strcpy(campo3, strtok(NULL, "()\",; "));
+				strcpy(campo4, strtok(NULL, "()\",; "));
+
+				arbolCatedratico->insertar(atoi(campo2), campo3, campo4);
+			}
+			if (strcmp(campo1, "Edificio") == 0)
+			{
+				strcpy(campo2, strtok(NULL, "()\",; "));
+
+				listadoEdificio->add(campo2);
+			}
+			if (strcmp(campo1, "Salon") == 0)
+			{
+				strcpy(campo2, strtok(NULL, "()\",; "));
+				strcpy(campo3, strtok(NULL, "()\",; "));
+				strcpy(campo4, strtok(NULL, "()\",; "));
+
+				listadoEdificio->addSalon(campo2, atoi(campo3), atoi(campo4));
+			}
+			if (strcmp(campo1, "Curso") == 0)
+			{
+				strcpy(campo2, strtok(NULL, "()\",; "));
+				strcpy(campo3, strtok(NULL, "()\",; "));
+				strcpy(campo4, strtok(NULL, "()\",; "));
+				strcpy(campo5, strtok(NULL, "()\",; "));
+
+				listadoCurso->add(atoi(campo2), campo3, atoi(campo4), atoi(campo5));
+			}
+		}
+
+		fclose(archivo);
+	}
+}

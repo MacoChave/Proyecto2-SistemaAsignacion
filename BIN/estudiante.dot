@@ -1,0 +1,5 @@
+digraph estudiante {
+	nodesep=.05;
+rankdir=RL	node [shape=record,width=1.5,height=.5];
+HASH[label="  | KIMBERLY |   | GOTEN | HIMARAWI | CHOCHO | RUTH |   | JASON | MITSUKI |   | MICHAEL |   | TRUNKS |   | SHIKADAI | BETTY | SARADA | ANTHONY |   |   | BORUTO | INOJIN | MIRAI |   |   |   |   | DONNA |   | METALLEE |   |   | CHARLES |   | KONOHAMARU |   | "];
+}

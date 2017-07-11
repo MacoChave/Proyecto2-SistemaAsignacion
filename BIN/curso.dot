@@ -1,0 +1,63 @@
+digraph cursos {
+	nodesep=.05;
+rankdir=LR	node [shape=record,width=1.5,height=.5];
+
+CR6[label = "6\nIDIOMA"];
+CR6 -> CR8;
+
+CR8[label = "8\nIDIOMA"];
+CR8 -> CR10;
+
+CR10[label = "10\nLOGICA"];
+CR10 -> CR101;
+
+CR101[label = "101\nMATE"];
+CR101 -> CR103;
+
+CR103[label = "103\nMATE"];
+CR103 -> CR107;
+
+CR107[label = "107\nMATE"];
+CR107 -> CR112;
+
+CR112[label = "112\nMATE"];
+CR112 -> CR116;
+
+CR116[label = "116\nMATE"];
+CR116 -> CR118;
+
+CR118[label = "118\nMATE"];
+CR118 -> CR147;
+
+CR147[label = "147\nFISICA"];
+CR147 -> CR150;
+
+CR150[label = "150\nFISICA"];
+CR150 -> CR152;
+
+CR152[label = "152\nFISICA"];
+CR152 -> CR770;
+
+CR770[label = "770\nIPC"];
+CR770 -> CR771;
+
+CR771[label = "771\nIPC"];
+CR771 -> CR772;
+
+CR772[label = "772\nESTRUCTURA"];
+CR772 -> CR777;
+
+CR777[label = "777\nCOMPILADORES"];
+CR777 -> CR796;
+
+CR796[label = "796\nLENGUAJES"];
+CR796 -> CR960;
+
+CR960[label = "960\nMATE"];
+CR960 -> CR962;
+
+CR962[label = "962\nMATE"];
+CR962 -> CR964;
+
+CR964[label = "964\nORGANIZACION"];
+}
