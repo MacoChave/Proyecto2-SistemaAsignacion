@@ -165,8 +165,8 @@ void Catedratico::graficar(NodoCatedratico *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[128];
-		char id[4];
+		char dot[150];
+		char id[10];
 
 		sprintf_s(id, " %d", actual->id);
 		strcpy_s(dot, "\tnd");

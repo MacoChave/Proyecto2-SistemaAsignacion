@@ -29,6 +29,8 @@ public:
 
 	void add(int codigo, char *nombre, int semestre, int noCreditos);
 	void remove(int codigo);
+	void editar(int coidgo_, char *nombre_, int semestre_, int noCreditos_);
+	NodoCurso* buscar(int codigo_);
 	void graph();
 private:
 	void add(NodoCurso *actual, int codigo, char *nombre, int semestre, int noCreditos);

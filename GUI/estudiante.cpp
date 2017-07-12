@@ -30,6 +30,8 @@ Estudiante::Estudiante()
 	m = 37;
 	T = 0;
 	factorCarga = 0;
+	this->registros = new NodoEstudiante*[M];
+
 	for (int i = 0; i < M; i++)
 		registros[i] = new NodoEstudiante();
 }
@@ -53,7 +55,7 @@ void Estudiante::insertar(int carnet, char *nombre, char *direccion)
 	insertar(registros, carnet, nombre, direccion);
 }
 
-void Estudiante::insertar(NodoEstudiante *r[], int carnet, char *nombre, char *direccion)
+void Estudiante::insertar(NodoEstudiante **r, int carnet, char *nombre, char *direccion)
 {
 	int f = h(carnet);
 
@@ -75,7 +77,7 @@ void Estudiante::insertar(NodoEstudiante *r[], int carnet, char *nombre, char *d
 		while (true)
 		{
 			int c = f + s(carnet, i);
-			while (c > M)
+			while (c >= M)
 				c = c - M;
 
 			if (r[c]->estado != 1)
@@ -100,6 +102,86 @@ void Estudiante::insertar(NodoEstudiante *r[], int carnet, char *nombre, char *d
 		rehashing();
 }
 
+void Estudiante::editar(int carnet, char *nombre, char *direccion)
+{
+	int f = h(carnet);
+
+	if (registros[f]->estado == 1)
+	{
+		/* CELDA CON ALGUN DATO */
+		if (registros[f]->carnet == carnet)
+		{
+			/* COPIAR VALORES */
+			registros[f]->carnet = carnet;
+			strcpy(registros[f]->nombre, nombre);
+			strcpy(registros[f]->direccion, direccion);
+			registros[f]->estado = 1;
+		}
+		else
+		{
+			/* CELDA CON OTRO DATO */
+			int i = 1;
+			while (true)
+			{
+				int c = f + s(carnet, i);
+				while (c > M)
+					c = c - M;
+
+				if (registros[c]->estado != 1)
+				{
+					/* COPIAR VALORES */
+					registros[c]->carnet = carnet;
+					strcpy(registros[c]->nombre, nombre);
+					strcpy(registros[c]->direccion, direccion);
+					registros[c]->estado = 1;
+					break;
+				}
+				i++;
+			}
+		}
+	}
+
+	factorCarga = calcularFC();
+}
+
+bool Estudiante::eliminar(int llv)
+{
+	int f = h(llv);
+
+	if (registros[f]->estado == 1)
+	{
+		/* CELDA CON ALGUN DATO */
+		if (registros[f]->carnet == llv)
+		{
+			delete(registros[f]);
+			T--;
+		}
+		else
+		{
+			/* CELDA CON OTRO DATO */
+			int i = 1;
+			while (true)
+			{
+				int c = f + s(llv, i);
+				while (c > M)
+					c = c - M;
+
+				if (registros[c]->estado != 1)
+				{
+					delete(registros[c]);
+					T--;
+					break;
+				}
+				i++;
+			}
+		}
+	}
+
+	factorCarga = calcularFC();
+
+	return true;
+}
+
 double Estudiante::calcularFC()
 {
 	return (T * 100) / M;
@@ -111,8 +193,12 @@ void Estudiante::rehashing()
 	int m_ = 0;
 	m_ = siguientePrimo();
 	M = m_;
-	NodoEstudiante *nuevoRegistro[] = {new NodoEstudiante()};
-	
+	T = 0;
+	NodoEstudiante **nuevoRegistro;
+	nuevoRegistro = new NodoEstudiante*[M];
+	for (int i = 0; i < M; i++)
+		nuevoRegistro[i] = new NodoEstudiante();
+
 	for (int i = 0; i < m; i++)
 	{
 		if (registros[i]->estado == 1)
@@ -121,18 +207,23 @@ void Estudiante::rehashing()
 		}
 	}
 
-	NodoEstudiante *temp = *registros;
+	NodoEstudiante **temp = registros;
 
 	registros = nuevoRegistro;
 
 	for (int i = 0; i < m; i++)
 	{
-		temp->carnet = 0;
-		delete(temp->nombre);
-		delete(temp->direccion);
-		temp++;
+		if (temp[i]->estado == 1)
+		{
+			temp[i]->carnet = 0;
+			delete[](temp[i]->nombre);
+			delete[](temp[i]->direccion);
+			temp[i]->estado = 2;
+			//delete(temp[i]);
+		}
 	}
-	temp = NULL;
+
+	delete[](temp);
 }
 
 void Estudiante::escribir(char filename[], char texto[], char *modo)
@@ -153,7 +244,7 @@ void Estudiante::escribir(char filename[], char texto[], char *modo)
 
 void Estudiante::graph()
 {
-	char dot[128];
+	char dot[150];
 	strcpy(dot, "digraph estudiante {\n");
 	strcat(dot, "\tnodesep=.05;\n");
 	strcat(dot, "rankdir=RL");

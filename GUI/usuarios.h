@@ -29,11 +29,14 @@ public:
 
 	void add(char *nombre, char *pass, char *tipo);
 	void remove(char *nombre);
+	void edit(char *nombre_, char *pass_, char *tipo_);
+	NodoUsuario* buscar(char *nombre);
 	char* check(char *nombre, char *pass);
 	void graph();
 private:
 	void add(NodoUsuario *actual, char *nombre, char *pass, char *tipo);
 	void remove(NodoUsuario *actual, char *nombre);
+	NodoUsuario* buscar(NodoUsuario *actual, char *nombre_);
 	char* check(NodoUsuario *actual, char *nombre, char *pass);
 	void graph(NodoUsuario *actual);
 	void escribir(char filename[], char texto[], char *modo);

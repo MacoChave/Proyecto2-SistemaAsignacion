@@ -235,7 +235,9 @@ void Edificio::graph()
 
 	graphSalones(primero);
 
-	strcpy(dot, "}");
+	strcpy(dot, "\"\"");
+
+	strcat(dot, "}");
 
 	escribir("edificio.dot", dot, "a");
 
@@ -246,7 +248,7 @@ void Edificio::graph(NodoEdificio *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[50];
+		char dot[128];
 		strcpy(dot, "\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, "[label = \"");
@@ -285,7 +287,7 @@ void Edificio::graphSalones(NodoEdificio *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[80];
+		char dot[100];
 		strcpy(dot, "\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, " -> ");
@@ -297,6 +299,6 @@ void Edificio::graphSalones(NodoEdificio *actual)
 		}
 
 		if (actual->siguiente != primero)
-			graph(actual->siguiente);
+			graphSalones(actual->siguiente);
 	}
 }

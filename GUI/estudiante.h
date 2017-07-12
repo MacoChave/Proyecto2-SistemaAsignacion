@@ -28,12 +28,13 @@ public:
 	int m;
 	double factorCarga;
 	int T;
-	NodoEstudiante *registros[37];
+	NodoEstudiante **registros;
 
 	void insertar(int carnet, char *nombre, char *direccion);
 	void graph();
 	double calcularFC();
 	NodoEstudiante* buscar(int llv);
+	void editar(int carnet, char *nombre, char *direccion);
 	bool eliminar(int llv);
 	int h(int llv);
 	int s(int llv, int i);

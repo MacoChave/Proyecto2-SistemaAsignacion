@@ -3,82 +3,170 @@ digraph arbolCatedratico
 	rankdir=TB;
 	node [shape=record]
 
-	ndLELOUCH[label="<izq> | LELOUCH 8 | <dch>"];
+	ndGabriel_Díaz[label="<izq> | Gabriel_Díaz 24252 | <dch>"];
 
-	ndLELOUCH : izq -> ndLIGHT;
+	ndGabriel_Díaz : izq -> ndOtto_Rodríguez;
 
-	ndLELOUCH : dch -> ndOLIVER;
+	ndGabriel_Díaz : dch -> ndSergio_Méndez;
 
-	ndLIGHT[label="<izq> | LIGHT 4 | <dch>"];
+	ndOtto_Rodríguez[label="<izq> | Otto_Rodríguez 11111 | <dch>"];
 
-	ndLIGHT : izq -> ndNARUTO;
+	ndOtto_Rodríguez : izq -> ndStaff2;
 
-	ndLIGHT : dch -> ndEREN;
+	ndOtto_Rodríguez : dch -> ndEdgar_René_Ornélyz;
 
-	ndNARUTO[label="<izq> | NARUTO 2 | <dch>"];
+	ndStaff2[label="<izq> | Staff2 1251 | <dch>"];
 
-	ndNARUTO : izq -> ndGOKY;
+	ndStaff2 : izq -> ndStaff7;
 
-	ndNARUTO : dch -> ndKANEKI;
+	ndStaff2 : dch -> ndStaff11;
 
-	ndGOKY[label="<izq> | GOKY 1 | <dch>"];
+	ndStaff7[label="<izq> | Staff7 0 | <dch>"];
 
-	ndKANEKI[label="<izq> | KANEKI 3 | <dch>"];
+	ndStaff11[label="<izq> | Staff11 4561 | <dch>"];
 
-	ndEREN[label="<izq> | EREN 6 | <dch>"];
+	ndStaff11 : izq -> ndStaff16;
 
-	ndEREN : izq -> ndKIRITO;
+	ndStaff11 : dch -> ndStaff8;
 
-	ndEREN : dch -> ndASH;
+	ndStaff16[label="<izq> | Staff16 4367 | <dch>"];
 
-	ndKIRITO[label="<izq> | KIRITO 5 | <dch>"];
+	ndStaff8[label="<izq> | Staff8 10134 | <dch>"];
 
-	ndASH[label="<izq> | ASH 7 | <dch>"];
+	ndEdgar_René_Ornélyz[label="<izq> | Edgar_René_Ornélyz 22232 | <dch>"];
 
-	ndOLIVER[label="<izq> | OLIVER 16 | <dch>"];
+	ndEdgar_René_Ornélyz : izq -> ndNeftalí_Calderón;
 
-	ndOLIVER : izq -> ndLUCY;
+	ndEdgar_René_Ornélyz : dch -> ndPedro_Pablo_Hernández;
 
-	ndOLIVER : dch -> ndMOKOTO;
+	ndNeftalí_Calderón[label="<izq> | Neftalí_Calderón 12367 | <dch>"];
 
-	ndLUCY[label="<izq> | LUCY 12 | <dch>"];
+	ndNeftalí_Calderón : izq -> ndLuis_Fernando_Espino;
 
-	ndLUCY : izq -> ndISEI;
+	ndNeftalí_Calderón : dch -> ndStaff20;
 
-	ndLUCY : dch -> ndRANMA;
+	ndLuis_Fernando_Espino[label="<izq> | Luis_Fernando_Espino 12345 | <dch>"];
 
-	ndISEI[label="<izq> | ISEI 10 | <dch>"];
+	ndLuis_Fernando_Espino : izq -> ndStaff15;
 
-	ndISEI : izq -> ndYUGI;
+	ndStaff15[label="<izq> | Staff15 11990 | <dch>"];
 
-	ndISEI : dch -> ndSASUKE;
+	ndStaff20[label="<izq> | Staff20 13778 | <dch>"];
 
-	ndYUGI[label="<izq> | YUGI 9 | <dch>"];
+	ndStaff20 : izq -> ndLuis_Alberto_Arias;
 
-	ndSASUKE[label="<izq> | SASUKE 11 | <dch>"];
+	ndStaff20 : dch -> ndStaff19;
 
-	ndRANMA[label="<izq> | RANMA 14 | <dch>"];
+	ndLuis_Alberto_Arias[label="<izq> | Luis_Alberto_Arias 12445 | <dch>"];
 
-	ndRANMA : izq -> ndALUCARD;
+	ndStaff19[label="<izq> | Staff19 14241 | <dch>"];
 
-	ndRANMA : dch -> ndTAI;
+	ndPedro_Pablo_Hernández[label="<izq> | Pedro_Pablo_Hernández 22256 | <dch>"];
 
-	ndALUCARD[label="<izq> | ALUCARD 13 | <dch>"];
+	ndSergio_Méndez[label="<izq> | Sergio_Méndez 71612 | <dch>"];
 
-	ndTAI[label="<izq> | TAI 15 | <dch>"];
+	ndSergio_Méndez : izq -> ndBayron_López;
 
-	ndMOKOTO[label="<izq> | MOKOTO 18 | <dch>"];
+	ndSergio_Méndez : dch -> ndManuel_Castillo;
 
-	ndMOKOTO : izq -> ndYUKITERU;
+	ndBayron_López[label="<izq> | Bayron_López 47854 | <dch>"];
 
-	ndMOKOTO : dch -> ndKONOHAMARU;
+	ndBayron_López : izq -> ndStaff12;
 
-	ndYUKITERU[label="<izq> | YUKITERU 17 | <dch>"];
+	ndBayron_López : dch -> ndMario_Bautista;
 
-	ndKONOHAMARU[label="<izq> | KONOHAMARU 19 | <dch>"];
+	ndStaff12[label="<izq> | Staff12 45098 | <dch>"];
 
-	ndKONOHAMARU : dch -> ndSHIKAMARU;
+	ndStaff12 : izq -> ndFrancisco_Guevara;
 
-	ndSHIKAMARU[label="<izq> | SHIKAMARU 20 | <dch>"];
+	ndStaff12 : dch -> ndRicardo_Morales;
+
+	ndFrancisco_Guevara[label="<izq> | Francisco_Guevara 38776 | <dch>"];
+
+	ndFrancisco_Guevara : izq -> ndEdgar_Sabán;
+
+	ndFrancisco_Guevara : dch -> ndJorge_Alvarez;
+
+	ndEdgar_Sabán[label="<izq> | Edgar_Sabán 37891 | <dch>"];
+
+	ndEdgar_Sabán : izq -> ndStaff17;
+
+	ndStaff17[label="<izq> | Staff17 33778 | <dch>"];
+
+	ndJorge_Alvarez[label="<izq> | Jorge_Alvarez 44332 | <dch>"];
+
+	ndRicardo_Morales[label="<izq> | Ricardo_Morales 46273 | <dch>"];
+
+	ndRicardo_Morales : dch -> ndStaff13;
+
+	ndStaff13[label="<izq> | Staff13 47812 | <dch>"];
+
+	ndMario_Bautista[label="<izq> | Mario_Bautista 61321 | <dch>"];
+
+	ndMario_Bautista : izq -> ndVivian_Campos;
+
+	ndMario_Bautista : dch -> ndStaff5;
+
+	ndVivian_Campos[label="<izq> | Vivian_Campos 54342 | <dch>"];
+
+	ndVivian_Campos : izq -> ndIvonne_Aldana;
+
+	ndVivian_Campos : dch -> ndStaff18;
+
+	ndIvonne_Aldana[label="<izq> | Ivonne_Aldana 49001 | <dch>"];
+
+	ndIvonne_Aldana : dch -> ndStaff22;
+
+	ndStaff22[label="<izq> | Staff22 54301 | <dch>"];
+
+	ndStaff18[label="<izq> | Staff18 55008 | <dch>"];
+
+	ndStaff5[label="<izq> | Staff5 66666 | <dch>"];
+
+	ndStaff5 : izq -> ndStaff21;
+
+	ndStaff21[label="<izq> | Staff21 66091 | <dch>"];
+
+	ndManuel_Castillo[label="<izq> | Manuel_Castillo 91231 | <dch>"];
+
+	ndManuel_Castillo : izq -> ndStaff6;
+
+	ndManuel_Castillo : dch -> ndManuel_López;
+
+	ndStaff6[label="<izq> | Staff6 77777 | <dch>"];
+
+	ndStaff6 : izq -> ndStaff1;
+
+	ndStaff6 : dch -> ndOtto_Escobar;
+
+	ndStaff1[label="<izq> | Staff1 72740 | <dch>"];
+
+	ndStaff1 : dch -> ndStaff14;
+
+	ndStaff14[label="<izq> | Staff14 75001 | <dch>"];
+
+	ndOtto_Escobar[label="<izq> | Otto_Escobar 88863 | <dch>"];
+
+	ndOtto_Escobar : izq -> ndStaff9;
+
+	ndOtto_Escobar : dch -> ndStaff4;
+
+	ndStaff9[label="<izq> | Staff9 78654 | <dch>"];
+
+	ndStaff4[label="<izq> | Staff4 88888 | <dch>"];
+
+	ndManuel_López[label="<izq> | Manuel_López 99912 | <dch>"];
+
+	ndManuel_López : izq -> ndMarlon_Orellana;
+
+	ndManuel_López : dch -> ndStaff3;
+
+	ndMarlon_Orellana[label="<izq> | Marlon_Orellana 99886 | <dch>"];
+
+	ndMarlon_Orellana : izq -> ndStaff10;
+
+	ndStaff10[label="<izq> | Staff10 99881 | <dch>"];
+
+	ndStaff3[label="<izq> | Staff3 99999 | <dch>"];
 
 }

@@ -347,7 +347,9 @@ void GUI::on_btnDeleteClicked(Wt::WString value)
 	}
 	if (strcmp(v, "Estudiante") == 0)
 	{
+		int id = atoi(ui->edtDeleteCarneEstudiante->text().toUTF8().c_str());
 
+		hashEstudiante->eliminar(id);
 	}
 	if (strcmp(v, "Catedratico") == 0)
 	{
@@ -418,8 +420,8 @@ void GUI::cargarArchivo(char *path)
 	char linea[128];
 	char campo1[25];
 	char campo2[25];
-	char campo3[30];
-	char campo4[25];
+	char campo3[50];
+	char campo4[50];
 	char campo5[25];
 
 	FILE *archivo;

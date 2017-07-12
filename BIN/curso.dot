@@ -2,62 +2,44 @@ digraph cursos {
 	nodesep=.05;
 rankdir=LR	node [shape=record,width=1.5,height=.5];
 
-CR6[label = "6\nIDIOMA"];
-CR6 -> CR8;
+CR281[label = "281\n4\nSistemas_Operativos_1"];
+CR281 -> CR732;
 
-CR8[label = "8\nIDIOMA"];
-CR8 -> CR10;
+CR732[label = "732\n4\nEstadistica1”"];
+CR732 -> CR770;
 
-CR10[label = "10\nLOGICA"];
-CR10 -> CR101;
-
-CR101[label = "101\nMATE"];
-CR101 -> CR103;
-
-CR103[label = "103\nMATE"];
-CR103 -> CR107;
-
-CR107[label = "107\nMATE"];
-CR107 -> CR112;
-
-CR112[label = "112\nMATE"];
-CR112 -> CR116;
-
-CR116[label = "116\nMATE"];
-CR116 -> CR118;
-
-CR118[label = "118\nMATE"];
-CR118 -> CR147;
-
-CR147[label = "147\nFISICA"];
-CR147 -> CR150;
-
-CR150[label = "150\nFISICA"];
-CR150 -> CR152;
-
-CR152[label = "152\nFISICA"];
-CR152 -> CR770;
-
-CR770[label = "770\nIPC"];
+CR770[label = "770\n4\nProgramacion_1"];
 CR770 -> CR771;
 
-CR771[label = "771\nIPC"];
+CR771[label = "771\n4\nProgramacion2"];
 CR771 -> CR772;
 
-CR772[label = "772\nESTRUCTURA"];
-CR772 -> CR777;
+CR772[label = "772\n5\nEstructuras_de_Datos"];
+CR772 -> CR773;
 
-CR777[label = "777\nCOMPILADORES"];
-CR777 -> CR796;
+CR773[label = "773\n4\nManejo_de_Implementación_de_Archivos"];
+CR773 -> CR775;
 
-CR796[label = "796\nLENGUAJES"];
-CR796 -> CR960;
+CR775[label = "775\n4\nBases_de_Datos_2"];
+CR775 -> CR777;
 
-CR960[label = "960\nMATE"];
-CR960 -> CR962;
+CR777[label = "777\n4\nCompiladores1"];
+CR777 -> CR779;
 
-CR962[label = "962\nMATE"];
-CR962 -> CR964;
+CR779[label = "779\n4\nArquitectura_de_Computadoras_y_Ensambladores2"];
+CR779 -> CR780;
 
-CR964[label = "964\nORGANIZACION"];
+CR780[label = "780\n5\nSoftware_Avanzado"];
+CR780 -> CR785;
+
+CR785[label = "785\n4\nAnalisis_y_Diseño_de_Sistemas_2"];
+CR785 -> CR795;
+
+CR795[label = "795\n4\nLeguajes_Formales"];
+CR795 -> CR964;
+
+CR964[label = "964\n4\nOrganización_Computacional"];
+CR964 -> CR970;
+
+CR970[label = "970\n5\nRedes_de_Computadoras_1"];
 }

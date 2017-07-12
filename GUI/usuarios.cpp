@@ -81,6 +81,44 @@ void Usuario::add(NodoUsuario *actual, char *nombre, char *pass, char *tipo)
 	}
 }
 
+void Usuario::edit(char *nombre_, char *pass_, char *tipo_)
+{
+	NodoUsuario *temp;
+	if (primero != NULL)
+		temp = buscar(nombre_);
+	if (temp != NULL)
+	{
+		strcpy(temp->nombre, nombre_);
+		strcpy(temp->pass, pass_);
+		strcpy(temp->tipo, tipo_);
+	}
+}
+
+NodoUsuario* Usuario::buscar(char *nombre)
+{
+	return buscar(primero, nombre);
+}
+
+NodoUsuario* Usuario::buscar(NodoUsuario *actual, char *nombre_)
+{
+	if (actual != NULL)
+	{
+		NodoUsuario *aux = actual;
+		while (aux != NULL)
+		{
+			if (strcmp(aux->nombre, nombre_) < 0)
+				aux = aux->siguiente;
+			else
+				break;
+		}
+		if (aux != NULL && strcmp(aux->nombre, nombre_) == 0)
+			return aux;
+		else
+			return NULL;
+	}
+	else
+		return NULL;
+}
 void Usuario::remove(char *nombre)
 {
 	if (primero != NULL)
@@ -194,7 +232,7 @@ void Usuario::graph(NodoUsuario *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[100];
+		char dot[150];
 		strcpy(dot, "\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, "[label = \"");

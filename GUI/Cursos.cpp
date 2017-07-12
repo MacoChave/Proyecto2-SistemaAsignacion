@@ -113,6 +113,32 @@ void Curso::remove(NodoCurso *actual, int codigo)
 	}
 }
 
+void Curso::editar(int codigo_, char *nombre_, int semestre_, int noCreditos_)
+{
+	NodoCurso *temp = buscar(codigo_);
+	if (temp != NULL)
+	{
+		strcpy(temp->nombre, nombre_);
+		temp->semestre = semestre_;
+		temp->noCreditos = noCreditos_;
+	}
+}
+
+NodoCurso* Curso::buscar(int codigo_)
+{
+	NodoCurso *temp = primero;
+
+	while (temp != NULL)
+	{
+		if (temp->codigo < codigo_)
+			temp = temp->siguiente;
+	}
+	if (temp != NULL && temp->codigo == codigo_)
+		return temp;
+	else
+		return NULL;
+}
+
 void Curso::escribir(char filename[], char texto[], char *modo)
 {
 	char path[25];
@@ -152,7 +178,7 @@ void Curso::graph(NodoCurso *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[80];
+		char dot[250];
 		strcpy(dot, "\n");
 		strcat(dot, actual->toGraph());
 		strcat(dot, "[label = \"");
@@ -182,8 +208,8 @@ char* NodoCurso::toGraph()
 
 char* NodoCurso::toString()
 {
-	char nodo[50];
-	sprintf(nodo, "%d\\n", codigo);
+	char nodo[80];
+	sprintf(nodo, "%d\\n%d\\n", codigo, noCreditos);
 	strcat(nodo, nombre);
 	return nodo;
 }

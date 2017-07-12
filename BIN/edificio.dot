@@ -3,30 +3,25 @@ digraph edificio {
 	node [shape=record,width=1.5,height=.5];
 
 EDT1[label = "T1"];
-EDT1 -> EDT3;
-
-EDT3[label = "T3"];
-EDT3 -> EDT5;
+EDT1 -> EDT5;
 
 EDT5[label = "T5"];
 EDT5 -> EDT7;
 
 EDT7[label = "T7"];
+EDT7 -> EDS11;
 
-EDT1 -> SL20;
-SL20[label = "20\n120"];
-SL20 -> SL30;
-SL30[label = "30\n120"];
-SL30 -> SL40;
-SL40[label = "40\n120"];
-SL40 -> SL50;
-SL50[label = "50\n120"];
+EDS11[label = "S11"];
 
-EDT3[label = "T3"];
-EDT3 -> EDT5;
+EDT1 -> SL104;
+SL104[label = "104\n45"];
 
-EDT5[label = "T5"];
-EDT5 -> EDT7;
+EDT5 -> SL305;
+SL305[label = "305\n25"];
 
-EDT7[label = "T7"];
-}
+EDT7 -> SL200;
+SL200[label = "200\n125"];
+SL200 -> SL202;
+SL202[label = "202\n75"];
+
+EDS11 -> ""}

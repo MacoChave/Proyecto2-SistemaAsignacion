@@ -320,6 +320,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="..\GUI\Cursos.cpp" />
     <ClCompile Include="..\GUI\edificio.cpp" />
     <ClCompile Include="..\GUI\estudiante.cpp" />
+    <ClCompile Include="..\GUI\horarios.cpp" />
     <ClCompile Include="..\GUI\lib.cpp" />
     <ClCompile Include="..\GUI\nodocatedratico.cpp" />
     <ClCompile Include="..\GUI\salon.cpp" />
@@ -330,6 +331,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\GUI\Cursos.h" />
     <ClInclude Include="..\GUI\edificio.h" />
     <ClInclude Include="..\GUI\estudiante.h" />
+    <ClInclude Include="..\GUI\horarios.h" />
     <ClInclude Include="..\GUI\lib.h" />
     <ClInclude Include="..\GUI\nodocatedratico.h" />
     <ClInclude Include="..\GUI\salon.h" />

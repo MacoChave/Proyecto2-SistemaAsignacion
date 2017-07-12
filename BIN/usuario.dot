@@ -3,14 +3,32 @@ digraph usuarios {
 	rankdir=LR
 	node [shape=record,width=1.5,height=.5];
 
-USarmin[label = "armin\ncolaborador"];
-USarmin -> USizaya;
+USAmaya123f[label = "Amaya123f\ncolaborador"];
+USAmaya123f -> USCarlosLopez123;
 
-USizaya[label = "izaya\ncolaborador"];
-USizaya -> USsakamoto;
+USCarlosLopez123[label = "CarlosLopez123\nestudiante"];
+USCarlosLopez123 -> USControl;
 
-USsakamoto[label = "sakamoto\nsuper"];
-USsakamoto -> USshiro;
+USControl[label = "Control\ncolaborador"];
+USControl -> USFMarroquín;
 
-USshiro[label = "shiro\nestudiante"];
+USFMarroquín[label = "FMarroquín\nestudiante"];
+USFMarroquín -> UScalificacion;
+
+UScalificacion[label = "calificacion\nsuper"];
+UScalificacion -> UScmoino;
+
+UScmoino[label = "cmoino\ncolaborador"];
+UScmoino -> USdtejeda27;
+
+USdtejeda27[label = "dtejeda27\ncolaborador"];
+USdtejeda27 -> USjjlopez45;
+
+USjjlopez45[label = "jjlopez45\nestudiante"];
+USjjlopez45 -> USlbarrera13;
+
+USlbarrera13[label = "lbarrera13\nestudiante"];
+USlbarrera13 -> USoscmorales;
+
+USoscmorales[label = "oscmorales\ncolaborador"];
 }

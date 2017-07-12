@@ -153,7 +153,7 @@ void Salon::graph(NodoSalon *actual)
 {
 	if (actual != NULL)
 	{
-		char dot[50];
+		char dot[100];
 		strcpy(dot, actual->toGraph());
 		strcat(dot, ";\n");
 		strcat(dot, actual->toGraph());
